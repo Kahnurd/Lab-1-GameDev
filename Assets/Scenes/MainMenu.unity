@@ -318,6 +318,7 @@ MonoBehaviour:
   startButton: {fileID: 1460954519}
   openCredits: {fileID: 1134007996}
   closeCredits: {fileID: 1135940580}
+  credits: {fileID: 583591971}
 --- !u!1 &583591971
 GameObject:
   m_ObjectHideFlags: 0

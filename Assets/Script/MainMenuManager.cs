@@ -8,14 +8,16 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Button startButton;
     [SerializeField] private Button openCredits;
     [SerializeField] private Button closeCredits;
-
+    [SerializeField] private GameObject credits;
+ 
 
 
     void Start()
     {
+        credits.SetActive(false);
         startButton.onClick.AddListener(() => { });
-        openCredits.onClick.AddListener(() => { });
-        closeCredits.onClick.AddListener(() => { });
+        openCredits.onClick.AddListener(() => { credits.SetActive(true); });
+        closeCredits.onClick.AddListener(() => { credits.SetActive(false); });
 
 
     }
