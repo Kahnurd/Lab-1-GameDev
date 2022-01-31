@@ -15,7 +15,7 @@ public class MainMenuManager : MonoBehaviour
     void Start()
     {
         credits.SetActive(false);
-        startButton.onClick.AddListener(() => { });
+        startButton.onClick.AddListener(() => { LoadingScreen.LoadScene("SampleScene"); });
         openCredits.onClick.AddListener(() => { credits.SetActive(true); });
         closeCredits.onClick.AddListener(() => { credits.SetActive(false); });
 
