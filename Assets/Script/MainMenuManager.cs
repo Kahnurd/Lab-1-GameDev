@@ -13,7 +13,11 @@ public class MainMenuManager : MonoBehaviour
 
     void Start()
     {
-        
+        startButton.onClick.AddListener(() => { });
+        openCredits.onClick.AddListener(() => { });
+        closeCredits.onClick.AddListener(() => { });
+
+
     }
 
     // Update is called once per frame
