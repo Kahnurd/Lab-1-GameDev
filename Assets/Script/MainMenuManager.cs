@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] private Button startButton;
+    [SerializeField] private Button platformerButton;
     [SerializeField] private Button openCredits;
     [SerializeField] private Button closeCredits;
     [SerializeField] private GameObject credits;
@@ -16,6 +17,7 @@ public class MainMenuManager : MonoBehaviour
     {
         credits.SetActive(false);
         startButton.onClick.AddListener(() => { LoadingScreen.LoadScene("SampleScene"); });
+        platformerButton.onClick.AddListener(() => { LoadingScreen.LoadScene("NotQuitePlatformer"); });
         openCredits.onClick.AddListener(() => { credits.SetActive(true); });
         closeCredits.onClick.AddListener(() => { credits.SetActive(false); });
 
