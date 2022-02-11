@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnObject : MonoBehaviour
 {
+    [SerializeField] private MeshRenderer meshRenderer;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,10 @@ public class SpawnObject : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SetColor(Color c)
+    {
+        meshRenderer.material.SetColor("_Color", c);
     }
 }

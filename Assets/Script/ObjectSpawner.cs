@@ -19,6 +19,9 @@ public class ObjectSpawner : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             SpawnObject newObject = Instantiate(objectPrefab);
+            newObject.SetColor(Random.ColorHSV(0, 1, 0.75f, 1, 0.5f, 1, 1, 1));
+            newObject.transform.position = spawnLocation.position;
+            newObject.transform.rotation = Random.rotation;
         }
     }
 }
