@@ -3,7 +3,9 @@ guid: cab4aef0ac4e1d647bd0f40e83928e57
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - meshRenderer: {instanceID: 0}
+  - audioSource: {fileID: 8530818377447190010, guid: 310f7b2c5e90c5142bab616b3e550414, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

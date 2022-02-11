@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
@@ -7,12 +8,16 @@ public class ObjectSpawner : MonoBehaviour
 
     [SerializeField] private Transform spawnLocation;
     [SerializeField] private SpawnObject objectPrefab;
+    [SerializeField] private TMP_Text objectCountText;
+    
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
+    private int objectCount = 0;
     // Update is called once per frame
     void Update()
     {
@@ -22,6 +27,8 @@ public class ObjectSpawner : MonoBehaviour
             newObject.SetColor(Random.ColorHSV(0, 1, 0.75f, 1, 0.5f, 1, 1, 1));
             newObject.transform.position = spawnLocation.position;
             newObject.transform.rotation = Random.rotation;
+            objectCount++;
+            objectCountText.text = "Object Count: " + objectCount;
         }
     }
 }
