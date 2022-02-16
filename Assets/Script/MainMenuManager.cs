@@ -8,6 +8,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Button startButton;
     [SerializeField] private Button platformerButton;
     [SerializeField] private Button SpawnerButton;
+    [SerializeField] private Button PongButton;
     [SerializeField] private Button openCredits;
     [SerializeField] private Button closeCredits;
     [SerializeField] private GameObject credits;
@@ -20,6 +21,7 @@ public class MainMenuManager : MonoBehaviour
         startButton.onClick.AddListener(() => { LoadingScreen.LoadScene("SampleScene"); });
         platformerButton.onClick.AddListener(() => { LoadingScreen.LoadScene("NotQuitePlatformer"); });
         SpawnerButton.onClick.AddListener(() => { LoadingScreen.LoadScene("3DSpawner"); });
+        PongButton.onClick.AddListener(() => { LoadingScreen.LoadScene("Pong"); });
         openCredits.onClick.AddListener(() => { credits.SetActive(true); });
         closeCredits.onClick.AddListener(() => { credits.SetActive(false); });
 
