@@ -5,7 +5,8 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - spawnLocation: {instanceID: 0}
-  - objectPrefab: {fileID: 4026228036542698652, guid: bcbaefd62b42c31418b2f1a832f91ff2, type: 3}
+  - objectPrefab: {fileID: -820140149692251738, guid: 3191b6ff9c3889d45bb5adaae3b03b44, type: 3}
+  - objectCountText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
