@@ -13,7 +13,7 @@ public class PongBall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Restart();
+
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class PongBall : MonoBehaviour
     }
 
 
-    void Restart()
+    public void Restart()
     {
         mainRigidbody.position = Vector2.zero;
         mainRigidbody.velocity = Vector2.zero;
