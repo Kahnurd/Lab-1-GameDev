@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
 
     IEnumerator FireRoutine() {
         for(int i = 2000; i >0; i++){
-            mainTransform.position += mainTransform.up * moveSpeed * Time.deltaTime;
+            mainTransform.position += mainTransform.forward * moveSpeed * Time.deltaTime;
             yield return new WaitForSeconds(.01f);
         }
         Destroy(this.gameObject);
