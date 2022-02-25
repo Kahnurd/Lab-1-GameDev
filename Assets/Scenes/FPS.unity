@@ -1054,13 +1054,8 @@ MonoBehaviour:
   bullets:
   - {fileID: 1765108554}
   shootSound: {fileID: 0}
-<<<<<<< HEAD
   fpsUI: {fileID: 1011074811}
   maxHealth: 5
-=======
-  fpsUI: {fileID: 0}
-  maxHealth: 3
->>>>>>> master
 --- !u!4 &785524895710975609
 Transform:
   m_ObjectHideFlags: 0
