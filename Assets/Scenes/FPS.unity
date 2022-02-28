@@ -1045,7 +1045,7 @@ Transform:
   m_GameObject: {fileID: 1979530229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.64485824, y: -0.82, z: 0.30399}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1148,7 +1148,7 @@ MonoBehaviour:
   shootPosition: {fileID: 1695650871}
   head: {fileID: 785524895710975609}
   bullets:
-  - {fileID: 1765108554}
+  - {fileID: 8388166098795783179, guid: 8436d59b395d01d4e89bda7cdaecfd16, type: 3}
   shootSound: {fileID: 1188733950}
   fpsUI: {fileID: 1011074811}
   maxHealth: 5
