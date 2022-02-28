@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainTransform: {fileID: 2115977064232441019}
-  moveSpeed: 0
+  moveSpeed: 3
 --- !u!54 &-7248146718109258592
 Rigidbody:
   m_ObjectHideFlags: 0
