@@ -23,6 +23,7 @@ public class FPSPlayer : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        Health = maxHealth;
     }
 
     // Update is called once per frame

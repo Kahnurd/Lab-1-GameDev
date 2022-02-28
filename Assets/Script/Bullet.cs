@@ -20,11 +20,14 @@ public class Bullet : MonoBehaviour
     }
 
     IEnumerator FireRoutine() {
-        for(int i = 2000; i >0; i++){
+        float elapsedTime = 0;
+        int moveTime = 5;
+        while(elapsedTime <= moveTime)
+        {
+            elapsedTime += Time.deltaTime;
             mainTransform.position += mainTransform.forward * moveSpeed * Time.deltaTime;
-            yield return new WaitForSeconds(.01f);
+            yield return null;
         }
         Destroy(this.gameObject);
-        yield break;
     }
 }
