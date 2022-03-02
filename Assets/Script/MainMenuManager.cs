@@ -17,6 +17,7 @@ public class MainMenuManager : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
         credits.SetActive(false);
         startButton.onClick.AddListener(() => { LoadingScreen.LoadScene("SampleScene"); });
         platformerButton.onClick.AddListener(() => { LoadingScreen.LoadScene("NotQuitePlatformer"); });
